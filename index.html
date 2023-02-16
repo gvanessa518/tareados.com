@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba en clase</title>
+
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+
+</head>
+
+<body>
+
+    <h2>Registro de estudiantes</h2>
+    
+    <label for="ciid">Cédula de Identidad</label><br>
+    <input type="text" name="ci" id="ciid"><br><br>
+
+    <label for="nombreid">Nombre del Alumno</label><br>
+    <input type="text" name="nombre" id="nombreid"><br><br>
+
+    <label for="mathid">Nota de Matemáticas</label><br>
+    <input type="number" name="math" id="mathid"><br><br>
+
+    <label for="fisid">Nota de Física</label><br>
+    <input type="number" name="fis" id="fisid"><br><br>
+
+    <label for="progid">Nota de Programación</label><br>
+    <input type="number" name="prog" id="progid"><br><br>
+
+    <button onclick="calcular($('#ciid').val(), $('#nombreid').val(), $('#mathid').val(), $('#fisid').val(), $('#progid').val())">Enviar</button>
+
+    <br><br>
+
+    <div id="resp"></div>
+
+</body>
+</html>
